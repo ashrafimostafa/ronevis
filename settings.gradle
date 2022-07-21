@@ -12,5 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "رو نویس"
+rootProject.name = "ronevis"
 include ':app'
