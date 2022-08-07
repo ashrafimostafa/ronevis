@@ -4,7 +4,7 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.WindowCompat
+import com.mostafa.tool.ronevis.extention.setStatusBarColor
 import com.mostafa.tool.ronevis.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -12,9 +12,8 @@ class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        WindowCompat.setDecorFitsSystemWindows(window, false)
         super.onCreate(savedInstanceState)
-
+        setStatusBarColor(R.color.firstColor)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
